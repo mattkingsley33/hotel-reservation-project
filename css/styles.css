@@ -56,8 +56,7 @@ nav a {
     padding: 10px 20px;
     font-size: large;
     cursor: pointer;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: goldenrod;
     border-radius: 10px;
     font-weight: 500;
@@ -91,6 +90,7 @@ nav a:active {
     margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
+    mix-blend-mode: color-burn;
 }
 
 .hero-text {
@@ -103,12 +103,18 @@ nav a:active {
 }
 
 .hero-text h1 {
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 20px;
 }
 
+.hero-text p {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: thin;
+}
 .hero-image img {
     width: 100%;
     height: auto;
     display: block;
+    filter: brightness(0.7);
 }
