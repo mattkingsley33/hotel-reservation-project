@@ -134,6 +134,11 @@ nav a:active {
     transform-origin: center;
 }
 
+button {
+    background-color: rgb(114, 82, 0);
+    color: white;
+    
+}
 .book-your-stay:hover,
 .book-your-stay:focus,
 .book-your-stay:active {
@@ -173,13 +178,105 @@ nav a:active {
 }
 
 .quick-availability {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px 40px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
     background-color: white;
+    padding: 20px 130px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
-    -webkit-text-fill-color: gray;
+    color: gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.quick-availability label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.quick-availability input {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.quick-availability select {
+    display: block;
+    padding: 15px;
+    width: 170px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.quick-availability button {
+    width: 200px;
+}
+
+.quick-availability label:nth-child(1) {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.quick-availability input:nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.quick-availability label:nth-child(3) {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.quick-availability input:nth-child(4) {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.quick-availability label:nth-child(5) {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.quick-availability select:nth-child(6) {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.quick-availability label:nth-child(7){
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.quick-availability select:nth-child(8) {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+.quick-availability button:nth-child(9) {
+    grid-row: 2;
+    grid-column: 5;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.intro {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro h1 {
+    font-size: 250%;
+    margin-bottom: 15px;
 }
