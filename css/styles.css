@@ -400,19 +400,51 @@ p {
     text-align: center;
 }
  
-.reviews{
+.reviews {
     display: flex;
     justify-content: center;
-    margin: 3%;
     gap: 50px;
-    align-items: center;
-    padding-left: 100px;
+    align-items: flex-start;
+    margin: 3%;
+    padding: 0 40px;
 }
 
-.reviews p {
+.review-card {
+    flex: 1;
+    max-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-card p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
-    align-items: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.review-card::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #725200, transparent);
+    margin: 15px 0;
+}
+
+.review-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    letter-spacing: 1px;
+}
+
+.review-card h4 {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
 }
 
 .icon{
