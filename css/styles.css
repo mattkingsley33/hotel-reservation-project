@@ -668,3 +668,17 @@ p {
     .room-list { gap: 16px; padding-left: 12px; }
     .room-card { width: 280px; flex: 0 0 280px; }
 }
+
+.input-error {
+    border: 2px solid red;
+}
+
+.input-success {
+    border: 2px solid green;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+}
